@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/finding-falcone/precache-manifest.5cdccc5ac530d3fe47c187852fb7172e.js"
+  "/finding-falcone/precache-manifest.2f967780840933543bfa7bf26008dfde.js"
 );
 
 workbox.clientsClaim();
