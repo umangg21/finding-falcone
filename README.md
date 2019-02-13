@@ -6,7 +6,7 @@ Finding Falcone APP is developed using React with TypeScript. This a responsive 
 
 Finding Falcone APP is also live on the following Link: https://umangg21.github.io/finding-falcone/
 
-# USe Case:
+# Use Case:
 
 Finding Falcone App is a Solution to GeekTrust UI Problem. Link [https://www.geektrust.in/coding-problem/frontend/space](https://www.geektrust.in/coding-problem/frontend/space). 
 
