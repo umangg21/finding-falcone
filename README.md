@@ -1,14 +1,14 @@
 # Findind Falcone APP
 
-This is Findind Falcone APP developed using React with TypeScript.
+Finding Falcone APP is developed using React with TypeScript. This a responsive app.
 
 # Link 
 
-Contact Manager App is also live on the following Link: https://umangg21.github.io/finding-falcone/
+Finding Falcone APP is also live on the following Link: https://umangg21.github.io/finding-falcone/
 
-# Use:
+# USe Case:
 
-Finding Falcone App is a Solution to GeekTrust FrontEnd Problem. Link [https://www.geektrust.in/coding-problem/frontend/space](https://www.geektrust.in/coding-problem/frontend/space). 
+Finding Falcone App is a Solution to GeekTrust UI Problem. Link [https://www.geektrust.in/coding-problem/frontend/space](https://www.geektrust.in/coding-problem/frontend/space). 
 
 This app is developed in React with Typescript.
 Unit Test are written using jest and enzyme(Having code coverge > 85%).
@@ -19,11 +19,10 @@ Unit Test are written using jest and enzyme(Having code coverge > 85%).
 1. Take the latest from Git
 2. Run "npm install" in the root directory
 3. Run "npm start"
-```
 
 Then open [http://localhost:3000/](http://localhost:3000/) to see your app.<br>
 When you’re ready to deploy to production, create a minified bundle with `npm run build`.
-
+```
 
 ## Available Scripts
 

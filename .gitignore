@@ -11,6 +11,9 @@
 # production
 /build
 
+# Problem Statement
+/assignment
+
 # misc
 .DS_Store
 .env.local
