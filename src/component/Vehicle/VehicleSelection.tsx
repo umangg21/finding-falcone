@@ -66,37 +66,21 @@ export class VehicleSelection extends React.Component<IVehicleSelectionProps, IV
         let planetIndex = allPlanets.findIndex(planet => planet.id == planetId) // 0
         let oldVehicleId = allPlanets[planetIndex].selectedVehicleId // 0
 
-        if (oldVehicleId == newVehicleId) {
-            // If old vehicle is same as new vehicle, 
+        if (oldVehicleId > -1) {
+            //  If a vehicle is previously selected
             // Unselect old vehicle => 
             // Remove old vehicle from selected planet
             // Increase oldvehicle avilible number
             allPlanets[planetIndex].selectedVehicleId = -1
             allVehicles[oldVehicleId].availible_no += 1
         }
-
-        else {
-            if (allVehicles[newVehicleId].availible_no > 0) {
-                if (newVehicleId > -1 && planetIndex > -1) {
-                    if (allPlanets[planetIndex].selectedVehicleId > -1) {
-                        // If a vehicle is previously selected =>
-                        // Remove old vehicle from selected planet
-                        // Increase oldvehicle avialible number
-                        if (oldVehicleId > -1) {
-                            allPlanets[planetIndex].selectedVehicleId = -1
-                            allVehicles[oldVehicleId].availible_no += 1
-                        }
-                    }
-                    if (allVehicles[newVehicleId].availible_no > 0) {
-                        // To select new vehicle for a planet 
-                        // Decrease new vehicle avialible number
-                        // Attach new vehicle with selected planet
-
-                        allVehicles[newVehicleId].availible_no -= 1
-                        allPlanets[planetIndex].selectedVehicleId = newVehicleId
-                    }
-                }
-            }
+ 
+        if (oldVehicleId !== newVehicleId &&  allVehicles[newVehicleId].availible_no > 0) {
+            // To select new vehicle for a planet 
+            // Decrease new vehicle avialible number
+            // Attach new vehicle with selected planet
+            allVehicles[newVehicleId].availible_no -= 1
+            allPlanets[planetIndex].selectedVehicleId = newVehicleId
         }
 
         let timetaken = this.getTotalTime(allPlanets)

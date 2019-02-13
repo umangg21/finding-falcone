@@ -52,7 +52,7 @@ export class VehicleCard extends React.Component<IVehicleCardProps, IVehicleCard
                         <img id={`VehicleCardListItemIcon${vehicle.id}`} style={styles.spaceShipIcon} src={SpaceIcons[vehicle.id]}></img>
                     </ListItemIcon>
 
-                    <ListItemText id={`VehicleCardListItemText${vehicle.id}`} primary={`${vehicle.name}`}  style={styles.ListItemText}/>
+                    <ListItemText id={`VehicleCardListItemText${vehicle.id}`} primary={`${vehicle.name} ${vehicle.availible_no}`}  style={styles.ListItemText}/>
                     {this.props.planetData.selectedVehicleId === vehicle.id &&
                         <AddedIcon style={styles.vehicleAddedIcon} />}
                 </ListItem>

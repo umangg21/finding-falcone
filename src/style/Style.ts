@@ -141,7 +141,7 @@ export const styles = {
     },
 
     VehicleCardContainer: {
-        width: `13rem`,
+        width: `14rem`,
         height: `26.2rem`,
         margin: `15px`
     },
